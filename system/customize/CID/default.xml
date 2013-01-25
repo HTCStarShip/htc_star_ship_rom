@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="system">
+    <module name="locale">
+      <function>
+        <set name="single">
+          <item name="total_list">en_US;es_US;</item>
+          <item type="boolean" name="en_US">yes</item>
+          <item type="boolean" name="es_US">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData">
+      <function>
+        <set name="single">
+          <item name="device_name">PG86100</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData1">
+      <function>
+        <set name="single">
+          <item name="sw_number">NA</item>
+        </set>
+      </function>
+    </module>
+    <module name="InputMethod">
+      <function name="IME_language_set">
+        <set name="single">
+          <item type="boolean" name="English">yes</item>
+          <item type="boolean" name="German">yes</item>
+          <item type="boolean" name="France">yes</item>
+          <item type="boolean" name="Italian">yes</item>
+          <item type="boolean" name="Spanish">yes</item>
+          <item type="boolean" name="Russian">yes</item>
+          <item type="boolean" name="Czech">yes</item>
+          <item type="boolean" name="Danish">yes</item>
+          <item type="boolean" name="Swedish">yes</item>
+          <item type="boolean" name="Norwegian">yes</item>
+          <item type="boolean" name="Dutch">yes</item>
+          <item type="boolean" name="Polish">yes</item>
+          <item type="boolean" name="Portugal">yes</item>
+          <item type="boolean" name="Greek">yes</item>
+          <item type="boolean" name="Turkish">yes</item>
+          <item type="boolean" name="Finnish">yes</item>
+          <item type="boolean" name="Hungarian">yes</item>
+          <item type="boolean" name="Romanian">yes</item>
+          <item type="boolean" name="Slovak">yes</item>
+          <item type="boolean" name="Croatian">yes</item>
+          <item type="boolean" name="Slovenian">yes</item>
+          <item type="boolean" name="Serbian">yes</item>
+          <item type="boolean" name="Bulgarian">yes</item>
+        </set>
+      </function>
+      <function name="IME_sip_set">
+        <set name="single">
+          <item name="total_list">Handwriting;ZuhYin;CangJie;PinYin;Stroke;</item>
+          <item type="boolean" name="ZuhYin">yes</item>
+          <item type="boolean" name="CangJie">yes</item>
+          <item type="boolean" name="PinYin">yes</item>
+          <item type="boolean" name="Stroke">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings">
+      <function name="screen_timeout">
+        <set name="plenty">
+          <item name="value1">15000</item>
+          <item name="value2">30000</item>
+          <item name="value3">60000</item>
+          <item name="value4">120000</item>
+          <item name="value5">600000</item>
+          <item name="value6">-1</item>
+        </set>
+      </function>
+      <function name="customized_value">
+        <set name="single">
+          <item name="has_netsharing">false</item>
+          <item name="has_modemlink">false</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="application">
+    <module name="Crash_Report">
+      <function name="setting">
+        <set name="single">
+          <item name="turn_off_report" type="boolean">no</item>
+          <item name="turn_off_application_log" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <BootConfiguration>
+    <BootAnimation animation="/system/customize/resource/SPC_bootanimation.zip" audio="/system/customize/resource/BoltAnimations.mp3" audiostart="SPC" />
+  </BootConfiguration>
+  <ShutdownConfiguration>
+    <ShutdownAnimation image_png="/system/customize/resource/hTC_downanimation.zip" image="" fps="15" />
+  </ShutdownConfiguration>
+  <category name="SettingsProvider">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="def_screen_off_timeout">30000</item>
+          <item name="def_location_gps_providers_allowed">false</item>
+          <item name="def_airplane_mode_toggleable_radios">wifi,bluetooth</item>
+          <item name="def_wifi_sleep_policy">0</item>
+          <item name="def_htc_mobile_network_on">true</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="Settings">
+    <module name="properties">
+      <function>
+        <set name="single">
+          <item name="market_name">HTC EVO V 4G</item>
+        </set>
+      </function>
+    </module>
+    <module name="list">
+      <function name="unsupport_disable_button_list">
+        <set name="single">
+          <item name="1">com.android.providers.downloads.ui</item>
+          <item name="2">com.sprint.dsa</item>
+          <item name="3">com.redbend.vdmc</item>
+          <item name="4">com.android.settings</item>
+          <item name="5">com.htc.WifiRouter</item>
+          <item name="6">com.sprint.zone</item>
+        </set>
+      </function>
+    </module>
+  </category>
+</customization_form>

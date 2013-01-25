@@ -1,0 +1,12 @@
+#!/system/bin/sh
+# init.d script for HTC Evo V 4G by xTheDakManx
+# Enable journal data_writeback for /system, /data and /cache EXT4 partitions
+
+target=`getprop ro.product.device`
+case "$target" in "shooter")
+tune2fs -o journal_data_writeback /dev/block/mmcblk0p23
+tune2fs -o journal_data_writeback /dev/block/mmcblk0p24
+tune2fs -o journal_data_writeback /dev/block/mmcblk0p25
+echo "HTC EVO 3D data_writeback enabled";
+;;
+esac

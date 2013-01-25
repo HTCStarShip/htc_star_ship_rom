@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetSoundList catFlag="1" listsize="7" dversion="0" sort="0" lang="en" timestamp="0">
+  <AssetSound reldate="0" aui="0" timestamp="0" downloadCount="0" ratingCount="0" rating="0" url="sound://system/customize/resource/VM_RINGTONE.mp3" preurl="" cat="108" size="144 KB" GUID="537b107ee89e470381c915052b0948fa" id="" type="4" refType="S_Ringtone">
+    <Info author="HTC Innovation" corporation="HTC" desc="Sound Set Ringtone" name="Virgin Mobile" />
+  </AssetSound>
+  <AssetSound reldate="0" aui="0" timestamp="0" downloadCount="0" ratingCount="0" rating="0" url="sound://system/customize/resource/VM_TEXT_2.mp3" preurl=" " cat="108" size="25 KB" GUID="b0538e526f3a408aba5c4d84ab6663e0" id="" type="3" refType="S_Notify">
+    <Info author="HTC Innovation" corporation="HTC" desc="Sound Set Default Notification Sound" name="Text 2" />
+  </AssetSound>
+</AssetSoundList>
