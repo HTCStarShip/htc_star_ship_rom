@@ -104,7 +104,7 @@ persist.data_netmgrd_mtu=1472
 #
 
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=15
+wifi.supplicant_scan_interval=180
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
@@ -118,6 +118,7 @@ dalvik.vm.heapgrowthlimit=48m
 
 # For the default value of agps
 ro.ril.def.agps.mode = 2
+ro.ril.def.agps.feature=1
 
 # For emmc phone storage
 ro.phone_storage = 0
@@ -204,42 +205,27 @@ Video.accelerate.hw=1
 debug.sf.hw=1
 debug.qctwa.statusbar=1
 com.qc.hardware=true
-ro.media.enc.hprof.vid.fps=75
 debug.egl.hw=1
 persist.sys.use_16bpp_alpha=1
 debug.performance.tuning=1
-windowsmgr.max_events_per_sec=1000
+windowsmgr.max_events_per_sec=240
 debug.composition.type=gpu
 persist.sys.use_dithering=0
 persist.sys.ui.hw=1
 
 #ril tweaks
-net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
-net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.default=6144,87380,110208,6144,16384,110208
+net.tcp.buffersize.wifi=262144,524288,1048576,262144,524288,1048576
+net.tcp.buffersize.umts=6144,87380,110208,6144,16384,110208
+net.tcp.buffersize.gprs=6144,8760,11680,6144,8760,11680
+net.tcp.buffersize.edge=6144,26280,35040,6144,16384,35040
+net.tcp.buffersize.evdo_b=4094,87380,262144,4096,16384,262144
 media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
 media.stagefright.enable-record=false
-ro.ril.hsxpa=3
-ro.ril.gprsclass=32
-ro.ril.hep=1
-ro.ril.hsdpa.category=28
-ro.ril.enable.3g.prefix=1
-ro.ril.htcmaskw1.bitmask=4294967295
-ro.ril.htcmaskw1=268449905
-ro.ril.hsupa.category=9
-ro.ril.def.agps.mode=2
-ro.ril.def.agps.feature=1
-ro.ril.enable.sdr=1
-ro.ril.enable.gea3=1
 ro.ril.enable.fd.plmn.prefix=23402,23410,23411
-ro.ril.enable.a52=0
-ro.ril.enable.a53=1
-ro.ril.enable.dtm=1
 persist.cust.tel.eons=1
 ro.config.hw_fast_dormancy=1
 ro.cdma.nbpcd=1
@@ -247,13 +233,13 @@ ro.ril.enable.amr.wideband=1
 
 #logging
 persist.adb.notify=0
-ro.config.htc.nocheckin=1
-ro.config.nocheckin=1
-profiler.force_disable_err_rpt=1
-profiler.force_disable_ulog=1
-ro.kernel.android.checkjni=0
-ro.kernel.checkjni=0
-ro.config.nocheckin=1
+#ro.config.htc.nocheckin=1
+#ro.config.nocheckin=1
+#profiler.force_disable_err_rpt=1
+#profiler.force_disable_ulog=1
+#ro.kernel.android.checkjni=0
+#ro.kernel.checkjni=0
+#ro.config.nocheckin=1
 
 #other perf
 ro.max.fling_velocity=12000
@@ -278,14 +264,13 @@ user.feature.ls_normal=false
 user.feature.sui=false
 ro.telephony.call_ring.delay=0
 ro.sec.proximity.delay=0
-ro.HOME_APP_ADJ=1
 persist.service.pcsync.enable=0
 persist.service.lgospd.enable=0
 ro.telephony.ril.v3=icccardstatus,skipbrokendataca ll,datacall,signalstrength,facilitylock 
 
 #power
 pm.sleep_mode=1
-ro.ril.disable.power.collapse=1 
+#ro.ril.disable.power.collapse=1 
 
 
 #modified
