@@ -34,9 +34,9 @@ ui_print("");
 ui_print("");
 ui_print("");
 
-ui_print("Welcome to Harmonia!");
+ui_print("Welcome to Starship Evo!");
 show_progress(0.900000, 20);
-ui_print("Preparing your device");
+ui_print("Initializing Launch Sequence");
 ui_print("Formatting");
 format("ext4", "EMMC", "/dev/block/mmcblk0p23");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p23", "/system");
@@ -144,7 +144,7 @@ package_extract_file("installbusybox", "/tmp/installbusybox");
 set_perm(0, 0, 0777, "/tmp/installbusybox");
 run_program("/tmp/installbusybox");
 
-ui_print("Extracting boot.img...  Almost done!");
+ui_print("Extracting boot.img...  Preparing Boosters!");
 assert(package_extract_file("boot.img", "/tmp/boot.img"),
        write_raw_image("/tmp/boot.img", "boot"),
        delete("/tmp/boot.img"));
@@ -186,5 +186,5 @@ ui_print("");
 ui_print("");
 ui_print("");
 ui_print("");
-ui_print("Finished!");
-ui_print("Please reboot your phone.");
+ui_print("Ready for Launch!");
+ui_print("Please reboot your EVO.");
