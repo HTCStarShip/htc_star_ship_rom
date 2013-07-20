@@ -1,8 +1,6 @@
-#Harmonia settings
-ro.goo.developerid=LeslieAnn
-ro.goo.rom=Harmonia_3_Evo_V
-ro.goo.version=11
-ro.product.version=Harmonia 3.17
+#Starship Settings
+
+ro.product.version=Starship_EVO
 
 ro.ril.oem.ecclist=911
 ro.ril.set.mtusize=1472
@@ -256,8 +254,8 @@ ro.min_pointer_dur=1
 
 #Other
 ro.media.enc.jpeg.quality=100
-ro.media.dec.jpeg.memcap=8000000
-ro.media.enc.hprof.vid.bps=8000000
+#ro.media.dec.jpeg.memcap=8000000
+#ro.media.enc.hprof.vid.bps=8000000
 user.feature.flex=true
 user.feature.ls_event=false
 user.feature.ls_normal=false
